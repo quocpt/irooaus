@@ -17,7 +17,12 @@ import Foundation
 
 import UIKit
 class CarBatteryController: UIViewController, UITextFieldDelegate,MFMailComposeViewControllerDelegate {
+    @IBOutlet weak var better_description_label: UILabel!
+    @IBOutlet weak var good_description_label: UILabel!
+    @IBOutlet weak var good_price_label: UILabel!
+    @IBOutlet weak var better_price_label: UILabel!
     
+    @IBOutlet weak var logo_icon: UIImageView!
     @IBOutlet weak var contact_number_textbox: UITextField!
     @IBOutlet weak var better_quantity_textbox: UITextField!
     @IBOutlet weak var good_quantity_textbox: UITextField!
@@ -37,6 +42,8 @@ class CarBatteryController: UIViewController, UITextFieldDelegate,MFMailComposeV
     var Item1 = ["Item1","Item1","Item1","Item1"]
     var Item2 = ["Item2","Item2","Item2","Item2"]
     
+    var good_price = ""
+    var better_price = ""
     var dataObject: String = ""
     var brandPassed = "123"
     var modelPassed = ""
@@ -77,8 +84,62 @@ class CarBatteryController: UIViewController, UITextFieldDelegate,MFMailComposeV
         // Present the view controller modally.
         self.present(composeVC, animated: true, completion: nil)
     }
+    
+    //Touch logo action
+    func tappedMe()
+    {
+        better_price_label.text = better_price + "$"
+        good_price_label.text = good_price + "$"
+        better_price_label.isHidden = false
+        good_price_label.isHidden = false
+    }
+    
+    func populateBatteryInfo()
+    {
+        
+        let url = Bundle.main.url(forResource: "battery", withExtension: "plist")!
+        do {
+            let data = try Data(contentsOf: url)
+            let dataArray = try PropertyListSerialization.propertyList(from: data, format: nil) as! [[String:String]]
+            //let dict = (dataArray)[1]
+            //print(dict)
+            var myArray = [String]()
+            var myArray2 = [String]()
+            for dict1 in dataArray
+            {
+                if (dict1["MODEL"]! == uniqueBattery.joined())
+                    {
+                        myArray.append(dict1["DESCRIPTION"]!)
+                        good_price = dict1["PRICE"]!
+                        
+                }
+                else if  (dict1["MODEL"]! == uniqueBetterBattery.joined())
+                {
+                    myArray2.append(dict1["DESCRIPTION"]!)
+                    better_price = dict1["PRICE"]!
+                }
+                
+            }
+            better_description_label.text = myArray2.joined()
+            good_description_label.text = myArray.joined()
+            
+            //print (uniqueBattery)
+            
+        }
+        catch {
+            print("This error must not happen", error)
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Logo touch
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.tappedMe))
+        tap.numberOfTapsRequired = 3
+
+        logo_icon.addGestureRecognizer(tap)
+        logo_icon.isUserInteractionEnabled = true
+        
          self.title = "SELECT BATTERY MODEL"
         
         if let path = Bundle.main.path(forResource: "Info", ofType: "plist") {
@@ -124,6 +185,8 @@ class CarBatteryController: UIViewController, UITextFieldDelegate,MFMailComposeV
             //print (uniqueBattery)
             
         }
+
+        
         catch {
             print("This error must not happen", error)
         }
@@ -132,6 +195,8 @@ class CarBatteryController: UIViewController, UITextFieldDelegate,MFMailComposeV
         better_id_label?.text = uniqueBetterBattery.joined()
         better_quantity_textbox?.text = ""
         good_quantity_textbox?.text = ""
+        populateBatteryInfo()
+        
         
     }
     
