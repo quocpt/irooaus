@@ -1,0 +1,348 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA08F99E1FB4114400A5A483 /* CarModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA08F99D1FB4114400A5A483 /* CarModelController.swift */; };
+		FA08F9A01FB42CB900A5A483 /* CarVersionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA08F99F1FB42CB900A5A483 /* CarVersionController.swift */; };
+		FA08F9A21FB4333800A5A483 /* CarBatteryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA08F9A11FB4333800A5A483 /* CarBatteryController.swift */; };
+		FA08F9A41FB49FA400A5A483 /* CarYearController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA08F9A31FB49FA400A5A483 /* CarYearController.swift */; };
+		FA08F9A61FB4BFF500A5A483 /* IROO.png in Resources */ = {isa = PBXBuildFile; fileRef = FA08F9A51FB4BFF500A5A483 /* IROO.png */; };
+		FA08F9B81FB5C1F600A5A483 /* car.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA08F9B71FB5C1F500A5A483 /* car.plist */; };
+		FADC7C4F1FB0A17000E422B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC7C4E1FB0A17000E422B4 /* AppDelegate.swift */; };
+		FADC7C511FB0A17000E422B4 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC7C501FB0A17000E422B4 /* RootViewController.swift */; };
+		FADC7C531FB0A17000E422B4 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC7C521FB0A17000E422B4 /* DataViewController.swift */; };
+		FADC7C551FB0A17000E422B4 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC7C541FB0A17000E422B4 /* ModelController.swift */; };
+		FADC7C581FB0A17000E422B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADC7C561FB0A17000E422B4 /* Main.storyboard */; };
+		FADC7C5A1FB0A17000E422B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADC7C591FB0A17000E422B4 /* Assets.xcassets */; };
+		FADC7C5D1FB0A17000E422B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADC7C5B1FB0A17000E422B4 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA08F9881FB4022300A5A483 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		FA08F99D1FB4114400A5A483 /* CarModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModelController.swift; sourceTree = "<group>"; };
+		FA08F99F1FB42CB900A5A483 /* CarVersionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarVersionController.swift; sourceTree = "<group>"; };
+		FA08F9A11FB4333800A5A483 /* CarBatteryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBatteryController.swift; sourceTree = "<group>"; };
+		FA08F9A31FB49FA400A5A483 /* CarYearController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarYearController.swift; sourceTree = "<group>"; };
+		FA08F9A51FB4BFF500A5A483 /* IROO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IROO.png; sourceTree = "<group>"; };
+		FA08F9B71FB5C1F500A5A483 /* car.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = car.plist; sourceTree = "<group>"; };
+		FADC7C4B1FB0A17000E422B4 /* BatteryProvider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryProvider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADC7C4E1FB0A17000E422B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FADC7C501FB0A17000E422B4 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		FADC7C521FB0A17000E422B4 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		FADC7C541FB0A17000E422B4 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		FADC7C571FB0A17000E422B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FADC7C591FB0A17000E422B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FADC7C5C1FB0A17000E422B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FADC7C5E1FB0A17000E422B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FADC7C481FB0A17000E422B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FADC7C421FB0A17000E422B4 = {
+			isa = PBXGroup;
+			children = (
+				FADC7C4D1FB0A17000E422B4 /* BatteryProvider */,
+				FADC7C4C1FB0A17000E422B4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FADC7C4C1FB0A17000E422B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FADC7C4B1FB0A17000E422B4 /* BatteryProvider.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FADC7C4D1FB0A17000E422B4 /* BatteryProvider */ = {
+			isa = PBXGroup;
+			children = (
+				FADC7C4E1FB0A17000E422B4 /* AppDelegate.swift */,
+				FADC7C501FB0A17000E422B4 /* RootViewController.swift */,
+				FADC7C521FB0A17000E422B4 /* DataViewController.swift */,
+				FADC7C541FB0A17000E422B4 /* ModelController.swift */,
+				FA08F99D1FB4114400A5A483 /* CarModelController.swift */,
+				FA08F99F1FB42CB900A5A483 /* CarVersionController.swift */,
+				FA08F9A31FB49FA400A5A483 /* CarYearController.swift */,
+				FA08F9A11FB4333800A5A483 /* CarBatteryController.swift */,
+				FADC7C561FB0A17000E422B4 /* Main.storyboard */,
+				FADC7C591FB0A17000E422B4 /* Assets.xcassets */,
+				FA08F9A51FB4BFF500A5A483 /* IROO.png */,
+				FADC7C5B1FB0A17000E422B4 /* LaunchScreen.storyboard */,
+				FA08F9B71FB5C1F500A5A483 /* car.plist */,
+				FADC7C5E1FB0A17000E422B4 /* Info.plist */,
+			);
+			path = BatteryProvider;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FADC7C4A1FB0A17000E422B4 /* BatteryProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADC7C611FB0A17000E422B4 /* Build configuration list for PBXNativeTarget "BatteryProvider" */;
+			buildPhases = (
+				FADC7C471FB0A17000E422B4 /* Sources */,
+				FADC7C481FB0A17000E422B4 /* Frameworks */,
+				FADC7C491FB0A17000E422B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BatteryProvider;
+			productName = BatteryProvider;
+			productReference = FADC7C4B1FB0A17000E422B4 /* BatteryProvider.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FADC7C431FB0A17000E422B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = BQAK;
+				TargetAttributes = {
+					FADC7C4A1FB0A17000E422B4 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = F9E5TBQDNJ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FADC7C461FB0A17000E422B4 /* Build configuration list for PBXProject "BatteryProvider" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FADC7C421FB0A17000E422B4;
+			productRefGroup = FADC7C4C1FB0A17000E422B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FADC7C4A1FB0A17000E422B4 /* BatteryProvider */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FADC7C491FB0A17000E422B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA08F9B81FB5C1F600A5A483 /* car.plist in Resources */,
+				FADC7C5D1FB0A17000E422B4 /* LaunchScreen.storyboard in Resources */,
+				FA08F9A61FB4BFF500A5A483 /* IROO.png in Resources */,
+				FADC7C5A1FB0A17000E422B4 /* Assets.xcassets in Resources */,
+				FADC7C581FB0A17000E422B4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FADC7C471FB0A17000E422B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADC7C511FB0A17000E422B4 /* RootViewController.swift in Sources */,
+				FA08F9A21FB4333800A5A483 /* CarBatteryController.swift in Sources */,
+				FADC7C551FB0A17000E422B4 /* ModelController.swift in Sources */,
+				FA08F99E1FB4114400A5A483 /* CarModelController.swift in Sources */,
+				FADC7C531FB0A17000E422B4 /* DataViewController.swift in Sources */,
+				FA08F9A41FB49FA400A5A483 /* CarYearController.swift in Sources */,
+				FADC7C4F1FB0A17000E422B4 /* AppDelegate.swift in Sources */,
+				FA08F9A01FB42CB900A5A483 /* CarVersionController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FADC7C561FB0A17000E422B4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FADC7C571FB0A17000E422B4 /* Base */,
+				FA08F9881FB4022300A5A483 /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FADC7C5B1FB0A17000E422B4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FADC7C5C1FB0A17000E422B4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FADC7C5F1FB0A17000E422B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FADC7C601FB0A17000E422B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FADC7C621FB0A17000E422B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F9E5TBQDNJ;
+				INFOPLIST_FILE = BatteryProvider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Iroo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FADC7C631FB0A17000E422B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F9E5TBQDNJ;
+				INFOPLIST_FILE = BatteryProvider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Iroo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FADC7C461FB0A17000E422B4 /* Build configuration list for PBXProject "BatteryProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADC7C5F1FB0A17000E422B4 /* Debug */,
+				FADC7C601FB0A17000E422B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FADC7C611FB0A17000E422B4 /* Build configuration list for PBXNativeTarget "BatteryProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADC7C621FB0A17000E422B4 /* Debug */,
+				FADC7C631FB0A17000E422B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FADC7C431FB0A17000E422B4 /* Project object */;
+}
