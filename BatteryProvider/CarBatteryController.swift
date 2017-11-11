@@ -42,6 +42,7 @@ class CarBatteryController: UIViewController, UITextFieldDelegate,MFMailComposeV
     var Item1 = ["Item1","Item1","Item1","Item1"]
     var Item2 = ["Item2","Item2","Item2","Item2"]
     
+    var isLogoTouch = false
     var good_price = ""
     var better_price = ""
     var dataObject: String = ""
@@ -77,9 +78,20 @@ class CarBatteryController: UIViewController, UITextFieldDelegate,MFMailComposeV
         
         composeVC.setSubject("Iroo APP --- Order " + dateString)
         
-        var mess = "-Car Brand:" + brandPassed + "\n-Car Model: " + modelPassed + "\n-Car Year: " + YearPassed + "\n-Phone: " + contact_number_textbox.text! + "\n------------------\n-GOOD Model: " + good_id_label.text! + "\n-GOOD Quantity: " + good_quantity_textbox.text! + "\n-BETTER Model: " + better_id_label.text! + "\n-BETTER Quantity: " + better_quantity_textbox.text!
+        var TotalTYPE1price:Double = 0
+        var TotalTYPE2price:Double = 0
         
-        composeVC.setMessageBody( mess, isHTML: false)
+        if ((good_price != "") && isLogoTouch==true)
+        {
+         TotalTYPE1price = Double(good_price)! * Double(good_quantity_textbox.text!)!
+        }
+        if ((better_price != "") && isLogoTouch==true)
+        {
+         TotalTYPE2price = Double(better_price)! * Double(better_quantity_textbox.text!)!
+        }
+        var mess = "-Car Brand:" + brandPassed + "\n-Car Model: " + modelPassed + "\n-Car Year: " + YearPassed + "\n-Phone: " + contact_number_textbox.text! + "\n------------------\n-GOOD Model: " + good_id_label.text! + "\n-TYPE1 Unit Price: " + good_price + "$\n-TYPE1 Quantity: " + good_quantity_textbox.text! + "\n-TYPE1 Total Price: " + String(TotalTYPE1price) + "$\n-TYPE2 Model: " + better_id_label.text! + "\n-TYPE2 Unit Price: " + better_price + "$\n-TYPE 2 Quantity: " + better_quantity_textbox.text! + "\n-TYPE2 Total Price: " + String(TotalTYPE2price)+"$"
+        
+        composeVC.setMessageBody( mess , isHTML: false)
         
         // Present the view controller modally.
         self.present(composeVC, animated: true, completion: nil)
@@ -88,6 +100,7 @@ class CarBatteryController: UIViewController, UITextFieldDelegate,MFMailComposeV
     //Touch logo action
     func tappedMe()
     {
+        isLogoTouch = true
         better_price_label.text = better_price + "$"
         good_price_label.text = good_price + "$"
         better_price_label.isHidden = false
