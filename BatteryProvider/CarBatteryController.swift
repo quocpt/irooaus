@@ -60,15 +60,17 @@ class CarBatteryController: UIViewController, UITextFieldDelegate,MFMailComposeV
         controller.dismiss(animated: true, completion: nil)
     }
     
+    
+    
     @IBAction func button_pressed(_ sender: Any) {
         saveTrack = (contact_number_textbox.text)!
         saveData()
         
-        let composeVC = MFMailComposeViewController()
-        composeVC.mailComposeDelegate = self as? MFMailComposeViewControllerDelegate
+        //let composeVC = MFMailComposeViewController()
+        //composeVC.mailComposeDelegate = self as? MFMailComposeViewControllerDelegate
         
         // Configure the fields of the interface.
-        composeVC.setToRecipients(["sales@hoco.com.au"])
+        //composeVC.setToRecipients(["sales@hoco.com.au"])
         
         let date = NSDate()
         let dateFormatter = DateFormatter()
@@ -76,7 +78,7 @@ class CarBatteryController: UIViewController, UITextFieldDelegate,MFMailComposeV
         let dateString = dateFormatter.string(from:date as Date)
         //print(dateString)
         
-        composeVC.setSubject("Iroo APP --- Order " + dateString)
+        //composeVC.setSubject("Iroo APP --- Order " + dateString)
         
         var TotalTYPE1price:Double = 0
         var TotalTYPE2price:Double = 0
@@ -89,12 +91,32 @@ class CarBatteryController: UIViewController, UITextFieldDelegate,MFMailComposeV
         {
          TotalTYPE2price = Double(better_price)! * Double(better_quantity_textbox.text!)!
         }
-        var mess = "-Car Brand:" + brandPassed + "\n-Car Model: " + modelPassed + "\n-Car Year: " + YearPassed + "\n-Phone: " + contact_number_textbox.text! + "\n------------------\n-GOOD Model: " + good_id_label.text! + "\n-TYPE1 Unit Price: " + good_price + "$\n-TYPE1 Quantity: " + good_quantity_textbox.text! + "\n-TYPE1 Total Price: " + String(TotalTYPE1price) + "$\n-TYPE2 Model: " + better_id_label.text! + "\n-TYPE2 Unit Price: " + better_price + "$\n-TYPE 2 Quantity: " + better_quantity_textbox.text! + "\n-TYPE2 Total Price: " + String(TotalTYPE2price)+"$"
+        var mess = "-Car Brand:" + brandPassed + "\n-Car Model: " + modelPassed + "\n-Car Year: " + YearPassed + "\n-Phone: " + contact_number_textbox.text! + "\n------------------\n-TYPE1 Model: " + good_id_label.text! + "\n-TYPE1 Unit Price: " + good_price + "$\n-TYPE1 Quantity: " + good_quantity_textbox.text! + "\n-TYPE1 Total Price: " + String(TotalTYPE1price) + "$\n\n-TYPE2 Model: " + better_id_label.text! + "\n-TYPE2 Unit Price: " + better_price + "$\n-TYPE 2 Quantity: " + better_quantity_textbox.text! + "\n-TYPE2 Total Price: " + String(TotalTYPE2price)+"$"
         
-        composeVC.setMessageBody( mess , isHTML: false)
+        
+        let mailRecipient = "sales@hoco.com.au"
+        let mailSubject = "IRoo APP --- Order " + dateString
+        let mailBody = mess
+        
+        let mailTo = "mailto:\(mailRecipient)?subject=\(mailSubject)&body=\(mailBody)"
+        
+        guard let escapedMailTo = mailTo.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {
+            print("Invalid mail to format")
+            return
+        }
+        
+        guard let url = NSURL(string: escapedMailTo) else {
+            print("Invalid mail to format: \(escapedMailTo)")
+            return
+        }
+        
+        UIApplication.shared.openURL(url as URL)
+        
+        
+        //composeVC.setMessageBody( mess , isHTML: false)
         
         // Present the view controller modally.
-        self.present(composeVC, animated: true, completion: nil)
+        //self.present(composeVC, animated: true, completion: nil)
     }
     
     //Touch logo action
