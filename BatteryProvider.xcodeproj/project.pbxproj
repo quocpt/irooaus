@@ -12,7 +12,7 @@
 		FA08F9A21FB4333800A5A483 /* CarBatteryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA08F9A11FB4333800A5A483 /* CarBatteryController.swift */; };
 		FA08F9A41FB49FA400A5A483 /* CarYearController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA08F9A31FB49FA400A5A483 /* CarYearController.swift */; };
 		FA08F9A61FB4BFF500A5A483 /* IROO.png in Resources */ = {isa = PBXBuildFile; fileRef = FA08F9A51FB4BFF500A5A483 /* IROO.png */; };
-		FA08F9B81FB5C1F600A5A483 /* car.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA08F9B71FB5C1F500A5A483 /* car.plist */; };
+		FA3014B61FC88B5D00018D70 /* car.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA3014B51FC88B5D00018D70 /* car.plist */; };
 		FA94D7A81FB6E3950057AAB1 /* battery.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA94D7A71FB6E3950057AAB1 /* battery.plist */; };
 		FADC7C4F1FB0A17000E422B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC7C4E1FB0A17000E422B4 /* AppDelegate.swift */; };
 		FADC7C511FB0A17000E422B4 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC7C501FB0A17000E422B4 /* RootViewController.swift */; };
@@ -30,7 +30,7 @@
 		FA08F9A11FB4333800A5A483 /* CarBatteryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBatteryController.swift; sourceTree = "<group>"; };
 		FA08F9A31FB49FA400A5A483 /* CarYearController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarYearController.swift; sourceTree = "<group>"; };
 		FA08F9A51FB4BFF500A5A483 /* IROO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IROO.png; sourceTree = "<group>"; };
-		FA08F9B71FB5C1F500A5A483 /* car.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = car.plist; sourceTree = "<group>"; };
+		FA3014B51FC88B5D00018D70 /* car.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = car.plist; path = ../../../../Dropbox/van/car.plist; sourceTree = "<group>"; };
 		FA94D7A71FB6E3950057AAB1 /* battery.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = battery.plist; sourceTree = "<group>"; };
 		FADC7C4B1FB0A17000E422B4 /* BatteryProvider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryProvider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADC7C4E1FB0A17000E422B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,8 +85,8 @@
 				FADC7C591FB0A17000E422B4 /* Assets.xcassets */,
 				FA08F9A51FB4BFF500A5A483 /* IROO.png */,
 				FADC7C5B1FB0A17000E422B4 /* LaunchScreen.storyboard */,
-				FA08F9B71FB5C1F500A5A483 /* car.plist */,
 				FA94D7A71FB6E3950057AAB1 /* battery.plist */,
+				FA3014B51FC88B5D00018D70 /* car.plist */,
 				FADC7C5E1FB0A17000E422B4 /* Info.plist */,
 			);
 			path = BatteryProvider;
@@ -152,8 +152,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA08F9B81FB5C1F600A5A483 /* car.plist in Resources */,
 				FADC7C5D1FB0A17000E422B4 /* LaunchScreen.storyboard in Resources */,
+				FA3014B61FC88B5D00018D70 /* car.plist in Resources */,
 				FA94D7A81FB6E3950057AAB1 /* battery.plist in Resources */,
 				FA08F9A61FB4BFF500A5A483 /* IROO.png in Resources */,
 				FADC7C5A1FB0A17000E422B4 /* Assets.xcassets in Resources */,
